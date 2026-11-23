@@ -5,23 +5,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Моя перша (або ні) сторінка</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 </head>
-<header>
-    <h1>Вітаю у світі WWW!</h1>
-    <nav aria-label="Основна навігація">
-        <a href="#intro">Про сторінку</a>
-    </nav>
-</header>
-<main>
-    <section id="intro" class="card">
-    <h2>Про сторінку</h2>
-    <p>Це мій перший абзац тексту (або ні).</p>
-    <ul>
-        <li>Структурування вмісту HTML.</li>
-        <li>Оформлення засобами CSS.</li>
-    </ul>
-    <img src="./9a54b46476e3a36c9e7603340cd03a2d.jpg" alt="2 cats arguing and 1 is watching">
-    </section>
+<body   class="light-theme">
+    <header>
+        <h1>Вітаю у світі WWW!</h1>
+        <nav aria-label="Основна навігація">
+            <a href="#intro">Про сторінку</a>
+        </nav>
+    </header>
+    <main>
+        <section id="intro" class="card">
+            <h2>Про сторінку</h2>
+            <p>Це мій перший абзац тексту (або ні).</p>
+            <ul>
+                <li>Структурування вмісту HTML.</li>
+                <li>Оформлення засобами CSS.</li>
+            </ul>
+            <img src="./9a54b46476e3a36c9e7603340cd03a2d.jpg" alt="2 cats arguing and 1 is watching">
+        </section>
+    <button id="theme-toggle" type="button" aria-pressed="false">Змінити тему</button>
+    <label for="visitor-name">Ім’я</label>
+    <input id="visitor-name" type="text">
+    <p id="greeting" aria-live="polite"></p>
+
+    <form id="comment-form">
+        <label for="comment-author">Ім’я автора</label>
+        <input id="comment-author" name="author" required>
+        <label for="comment-text">Коментар</label>
+        <textarea id="comment-text" name="comment" required></textarea>
+        <button type="submit">Додати</button>
+    </form>
+    <ul id="comments"></ul>
+
+    <button id="load-html" type="button">Завантажити HTML</button>
+    <p id="html-status" role="status"></p>
+    <div id="html-content"></div>
+
+    <button id="load-json" type="button">Завантажити JSON</button>
+    <p id="json-status" role="status"></p>
+    <ul id="json-content"></ul>
+    
+    
+
 </main>
-<footer><p>Навчальна вебсторінка.</p></footer>
+    <footer><p>Навчальна вебсторінка.</p></footer>
+</body>
 </html>

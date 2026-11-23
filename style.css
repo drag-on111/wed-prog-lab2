@@ -3,6 +3,12 @@ body{
     background: #fd8f8f;
     margin: 20px;
 }
+.light-theme{
+    background-color: #fd8f8f;
+}
+.dark-theme{
+    background-color: #9a3333;
+}
 h1{
     color: rgb(77, 75, 35);
     text-align: right;
@@ -46,3 +52,4 @@ body { background: white; color: black; margin: 0; }
 nav { display: none; }
 a { color: black; }
 }
+
